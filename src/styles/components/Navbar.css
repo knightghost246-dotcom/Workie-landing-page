@@ -1,0 +1,136 @@
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding: 16px 0;
+}
+
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  width: 36px;
+  height: 36px;
+}
+
+.navbar-logo-text {
+  font-weight: 800;
+  font-size: 24px;
+  color: #111827;
+}
+
+.navbar-links {
+  display: none;
+  gap: 32px;
+}
+
+.navbar-links a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-links a:hover {
+  color: #0D9488;
+}
+
+.navbar-auth {
+  display: none;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar-auth .login {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.navbar-auth .login:hover {
+  color: #0D9488;
+}
+
+.navbar-auth .register-btn {
+  background: #0D9488;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.navbar-auth .register-btn:hover {
+  background: #0f7e74;
+}
+
+.navbar-mobile-btn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #111827;
+  cursor: pointer;
+}
+
+.navbar-mobile-menu {
+  display: none;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+  margin-top: 16px;
+}
+
+.navbar-mobile-menu.open {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.navbar-mobile-menu a {
+  font-weight: 500;
+  font-size: 15px;
+  color: #111827;
+  text-decoration: none;
+}
+
+.navbar-mobile-menu .auth-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #E5E7EB;
+}
+
+.navbar-mobile-menu .auth-links .register-mobile {
+  background: #0D9488;
+  color: #fff;
+  padding: 12px;
+  border-radius: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-links { display: flex; }
+  .navbar-auth { display: flex; }
+  .navbar-mobile-btn { display: none; }
+  .navbar-mobile-menu { display: none !important; }
+}

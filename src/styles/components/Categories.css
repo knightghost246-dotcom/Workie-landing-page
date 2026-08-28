@@ -1,0 +1,33 @@
+.categories {
+  padding: 20px 0 40px;
+}
+
+.categories-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 16px;
+}
+
+.categories-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.chip {
+  background: #fff;
+  border: 1px solid #E5E7EB;
+  border-radius: 100px;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #0D9488;
+  transition: all 0.2s;
+  cursor: default;
+}
+
+.chip:hover {
+  background: #f0fdfa;
+  border-color: #0D9488;
+}
